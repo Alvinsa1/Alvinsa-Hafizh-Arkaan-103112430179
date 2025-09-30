@@ -21,7 +21,7 @@ C++ merupakan bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada a
     return 0;
     }
 
-Kode C++ di atas adalah program sederhana yang menghitung nilai variabel Z. Program pertama-tama mendeklarasikan tiga variabel integer (W, X, Y) dan satu variabel floating-point (Z). Variabel X diinisialisasi dengan nilai 7, Y dengan 3, dan W dengan 1. Perhitungan nilai Z menggunakan rumus (X + Y) / (Y + W), yang secara matematis adalah (7+3)/(3+1) atau 10/4. Karena semua operan dalam perhitungan ini adalah integer (X, Y, W), operasi 10/4 akan menghasilkan pembagian integer, yang hasilnya adalah 2 (sisa 2 diabaikan), dan hasil integer 2 ini kemudian diubah (cast) menjadi float saat disimpan di variabel Z. Akhirnya, program mencetak pesan "Nilai z = " diikuti nilai 2.00 (atau 2) ke konsol.
+Kode C++ di atas adalah program sederhana yang menghitung nilai variabel Z. pertama deklarasi dan inisialisasi Tiga variabel, W, X, dan Y, dideklarasikan sebagai bilangan bulat (int). Satu variabel, Z, dideklarasikan sebagai bilangan pecahan (float), nilai awal diberikan kepada variabel int: X=7, Y=3, dan W=1. Program mencetak teks "Nilai z = " diikuti dengan nilai yang tersimpan dalam Z.
 
 > Output
 > ![Screenshot bagian x](Screenshot_aritmatika.png.jpg)
@@ -79,7 +79,7 @@ Kode C++ di atas adalah program sederhana yang menghitung nilai variabel Z. Prog
     return 0;
     }
 
-Kode C++ diatas secara modular menghitung dan menampilkan luas serta keliling persegi panjang. Program diawali dengan meminta panjang dan lebar dari pengguna. Logika perhitungan dipecah menjadi dua fungsi terpisah (hitungLuas dan hitungKeliling) yang mengembalikan nilai double untuk digunakan kembali di main(). Selain itu, terdapat satu prosedur (tampilkanHasil, bertipe void) yang tidak mengembalikan nilai tetapi bertanggung jawab langsung untuk menerima data dan mencetak semua hasil perhitungan sekaligus ke konsol, mendemonstrasikan kedua pendekatan dalam membagi tugas pemrograman.
+Kode C++ diatas secara modular menghitung dan menampilkan luas serta keliling persegi panjang. pertama variabel panjang dan lebar  dideklarasikan, dan pengguna diminta untuk memasukkan nilainya. lalu perhitungan main memanggil hitungLuas dan hitungKeliling untuk mendapatkan hasil dan menyimpannya ke dalam variabel lokal (luas dan keliling). Hasil perhitungan yang telah disimpan (luas dan keliling) dicetak ke konsol sebagai output pertama, Fungsi tampilkanHasil dipanggil. Fungsi ini mengulang perhitungan di dalamnya dan mencetak semua detail (panjang, lebar, luas, dan keliling) dalam format tabel yang rapi.
 
 > Output
 > ![Screenshot bagian x](screenshot_fungsi.jpg)
@@ -146,7 +146,7 @@ int main()
 }
 ```
 
-Kode c++ diatas aktif menjalankan program menggunakan struktur kendali switch untuk mengidentifikasi apakah sebuah kode angka hari merupakan Hari Kerja atau Hari Libur. Program pertama meminta pengguna memasukkan sebuah bilangan bulat (kode_hari) setelah menampilkan panduan kode hari 1 hingga 7. Nilai input tersebut kemudian diuji oleh pernyataan switch. Kasus 1 hingga 5 (Senin sampai Jumat) dikelompokkan bersama (fall-through karena tidak ada break di antara mereka) dan menghasilkan output "Hari Kerja". Kasus 6 dan 7 (Sabtu dan Minggu) juga dikelompokkan dan menghasilkan "Hari Libur". Blok default berfungsi sebagai penanganan kesalahan, mencetak pesan "Kode masukan salah!!!" jika pengguna memasukkan angka di luar rentang 1 hingga 7.
+Program C++ ini adalah program dasar yang berfungsi untuk menentukan status hari (Hari Kerja atau Hari Libur) berdasarkan kode angka (1 hingga 7) yang dimasukkan oleh pengguna. Program ini menggunakan struktur kontrol switch-case untuk mengevaluasi input dan memberikan respons yang sesuai. Pertama adalah memetakan input bilangan bulat (kode_hari) menjadi salah satu dari tiga kategori: Hari Kerja, Hari Libur, atau Kode Masukan Salah. Program menampilkan panduan kode hari kepada pengguna 1 (Senin) hingga 5 (Jumat) 6 (Sabtu) dan 7 (Minggu) Input pengguna disimpan dalam variabel int bernama kode_hari. Jika input pengguna adalah nilai lain selain 1 sampai 7 (misalnya 0 atau 8), program menjalankan blok default dan mencetak pesan kesalahan "Kode masukan salah!!!".
 
 > Output
 > ![Screenshot bagian x](screenshot_kondisi.jpg)
@@ -184,7 +184,9 @@ int main()
     return 0;
 }
 ```
-Kode C++ diatas aktif menjalankan program ini mendemonstrasikan struktur perulangan do-while untuk mencetak pesan berulang kali. Program dimulai dengan menginisialisasi variabel kontrol i menjadi 1 dan meminta pengguna memasukkan batas perulangan (jum). Perulangan do-while memiliki jaminan untuk dieksekusi minimal satu kali sebelum kondisinya diperiksa. Dalam setiap iterasi, program mencetak pesan "bahlil ke-" diikuti nilai i + 1, dan kemudian nilai i dinaikkan satu per satu (i++). Proses perulangan ini akan terus berlanjut selama kondisi i < jum masih bernilai benar, berhenti ketika i sudah mencapai atau melebihi batas yang ditentukan oleh pengguna.
+Program C++ ini adalah program sederhana yang dirancang untuk mencetak pesan secara berulang menggunakan struktur perulangan do-while, dengan jumlah perulangan ditentukan oleh input pengguna. Kode ini memiliki dua blok, tetapi hanya blok kedua (yang tidak dikomentari) yang akan dieksekusi, yang mendemonstrasikan perulangan. Dua variabel bilangan bulat (int) dideklarasikan Berfungsi sebagai counter atau penghitung perulangan, diinisialisasi dengan nilai 1, digunakan untuk menyimpan jumlah atau batas perulangan yang akan dimasukkan pengguna. Lalu program meminta pengguna memasukkan nilai, yang langsung disimpan ke dalam variabel. Program menggunakan do-while, yang menjamin blok kode di dalamnya dieksekusi minimal satu kali, bahkan jika kondisi while salah sejak awal.
+
+
 
 > Output
 > ![Screenshot bagian x](screenshot_perulangan.png.jpg)
@@ -224,7 +226,7 @@ int main() {
 }
 ```
 
-Kode C++ di atas mendemonstrasikan penggunaan struct (struktur) untuk mengelompokkan data yang saling berkaitan, dalam hal ini data seorang mahasiswa. Awalnya, struktur bernama Mahasiswa didefinisikan untuk menampung tiga tipe data: string nama, string nim, dan float ipk. Dalam fungsi main(), sebuah variabel struktur bernama mhs1 dideklarasikan dari tipe Mahasiswa. Program kemudian meminta pengguna untuk memasukkan data: nama, NIM, dan IPK, dan menyimpannya ke anggota struktur menggunakan operator titik (misalnya, mhs1.nama). Perlu diperhatikan, untuk input nama digunakan getline(cin, ...) agar nama yang mengandung spasi dapat dimasukkan sepenuhnya. Terakhir, program mencetak semua data yang telah disimpan (Nama, NIM, dan IPK) ke konsol, mengonfirmasi bahwa data telah berhasil dikelompokkan dan diakses melalui variabel mhs1.
+Program C++ ini adalah program dasar yang mendemonstrasikan cara menggunakan struktur data (struct) untuk mengorganisir informasi yang saling terkait, mengambil input data tersebut dari pengguna, dan menampilkannya kembali. Program memulai dengan mendefinisikan sebuah struktur kustom bernama Mahasiswa. Struktur ini berfungsi sebagai cetak biru untuk mengelompokkan tiga anggota data yang berbeda tetapi logis menjadi satu unit Untuk menyimpan nama lengkap, untuk menyimpan nama lengkap, ntuk menyimpan Indeks Prestasi Kumulatif (IPK).
 
 > Output
 > ![Screenshot bagian x](screenshot.png.jpg)
@@ -243,7 +245,7 @@ int main()
     return 0;
 }
 ```
-Kode C++ diatas berfungsi untuk menerima dan menampilkan satu karakter dari input pengguna. Meskipun variabel ch dideklarasikan sebagai string, program ini secara khusus menggunakan fungsi getchar() untuk membaca input. getchar() adalah fungsi dari library C (<cstdio> atau <stdio.h>) yang diakses melalui C++ dan dirancang untuk membaca satu karakter dari input standar (stdin). Karakter yang dibaca oleh getchar() dikembalikan sebagai nilai integer (kode ASCII), yang kemudian secara implisit diubah menjadi string saat diberikan ke variabel ch. Akhirnya, program mencetak pesan yang mengonfirmasi karakter tunggal yang berhasil di-input oleh pengguna
+Program C++ ini adalah program yang sangat singkat dan dirancang untuk membaca dan menampilkan satu karakter tunggal dari input pengguna, secara spesifik menggunakan fungsi C-style getchar(). Deklarasi Variabel: Variabel ch dideklarasikan sebagai tipe string. Lalu Pengambilan Karakter getchar() adalah fungsi dari pustaka C yang mengambil kode ASCII dari karakter pertama yang ada di input buffer (stdin), nilai karakter tunggal yang dikembalikan oleh getchar() kemudian disimpan ke dalam variabel string ch, Jika pengguna mengetik lebih dari satu karakter (misalnya, "dunia"), hanya karakter pertama ('d') yang akan diambil dan disimpan lalu terakhir program kemudian mencetak teks "Karakter yang Anda masukkan adalah: " diikuti dengan nilai karakter yang berhasil disimpan dalam variabel ch.
 
 > Output
 > ![Screenshot bagian x](screenshot_test.png.jpg)
