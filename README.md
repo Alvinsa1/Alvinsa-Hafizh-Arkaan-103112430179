@@ -14,7 +14,7 @@ C++ merupakan bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada a
     int W, X, Y;
     float Z;
     X = 7;
-    Y = 3;
+    Y = 3;  
     W = 1;
     Z = (X + Y) / (Y + W);
     cout << "Nilai z = " << Z << endl;
