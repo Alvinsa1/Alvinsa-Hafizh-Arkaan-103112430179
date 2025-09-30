@@ -24,7 +24,7 @@ C++ merupakan bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada a
 Kode C++ di atas adalah program sederhana yang menghitung nilai variabel Z. pertama deklarasi dan inisialisasi Tiga variabel, W, X, dan Y, dideklarasikan sebagai bilangan bulat (int). Satu variabel, Z, dideklarasikan sebagai bilangan pecahan (float), nilai awal diberikan kepada variabel int: X=7, Y=3, dan W=1. Program mencetak teks "Nilai z = " diikuti dengan nilai yang tersimpan dalam Z.
 
 > Output
-> ![Screenshot bagian x](Screenshot_aritmatika.png.jpg)
+> ![Screenshot bagian x](Screenshot_aritmatika.jpg)
 
 
 
@@ -189,7 +189,7 @@ Program C++ ini adalah program sederhana yang dirancang untuk mencetak pesan sec
 
 
 > Output
-> ![Screenshot bagian x](screenshot_perulangan.png.jpg)
+> ![Screenshot bagian x](screenshot_perulangan.jpg)
 
 
 ### soal 5 (Struct)
@@ -229,7 +229,7 @@ int main() {
 Program C++ ini adalah program dasar yang mendemonstrasikan cara menggunakan struktur data (struct) untuk mengorganisir informasi yang saling terkait, mengambil input data tersebut dari pengguna, dan menampilkannya kembali. Program memulai dengan mendefinisikan sebuah struktur kustom bernama Mahasiswa. Struktur ini berfungsi sebagai cetak biru untuk mengelompokkan tiga anggota data yang berbeda tetapi logis menjadi satu unit Untuk menyimpan nama lengkap, untuk menyimpan nama lengkap, ntuk menyimpan Indeks Prestasi Kumulatif (IPK).
 
 > Output
-> ![Screenshot bagian x](screenshot.png.jpg)
+> ![Screenshot bagian x](screenshot.jpg)
 
 ### soal 6 (Test)
 ```c++
@@ -248,7 +248,7 @@ int main()
 Program C++ ini adalah program yang sangat singkat dan dirancang untuk membaca dan menampilkan satu karakter tunggal dari input pengguna, secara spesifik menggunakan fungsi C-style getchar(). Deklarasi Variabel: Variabel ch dideklarasikan sebagai tipe string. Lalu Pengambilan Karakter getchar() adalah fungsi dari pustaka C yang mengambil kode ASCII dari karakter pertama yang ada di input buffer (stdin), nilai karakter tunggal yang dikembalikan oleh getchar() kemudian disimpan ke dalam variabel string ch, Jika pengguna mengetik lebih dari satu karakter (misalnya, "dunia"), hanya karakter pertama ('d') yang akan diambil dan disimpan lalu terakhir program kemudian mencetak teks "Karakter yang Anda masukkan adalah: " diikuti dengan nilai karakter yang berhasil disimpan dalam variabel ch.
 
 > Output
-> ![Screenshot bagian x](screenshot_test.png.jpg)
+> ![Screenshot bagian x](screenshot_test.jpg)
 
 ## Unguided
 
@@ -294,7 +294,7 @@ int main() {
 Tujuan program ini  ini mengambil dua input nilai desimal dari pengguna dan menerapkan operator aritmatika standar padanya. Tujuannya adalah untuk mendemonstrasikan input/output dasar, operasi matematika, pengaturan format output, dan penanganan kondisi khusus. Dua variabel bertipe float dan dideklarasikan untuk menyimpan nilai input yang dapat berupa angka desimal, Program meminta pengguna untuk memasukkan nilai untuk kedua variabel tersebut melalui cout dan cin. Sebelum menampilkan hasil perhitungan, program menggunakan fungsi dari header <iomanip> untuk memformat output Mengatur output angka agar ditampilkan dalam format titik tetap (bukan notasi ilmiah), Menetapkan bahwa semua angka pecahan yang dicetak setelahnya akan memiliki dua angka di belakang koma (presisi 2). kemudian Program menjalankan dan mencetak hasil operasi secara berurutan.
 
 > Output
-> ![Screenshot bagian x](screenshot_unguided1.png.jpg)
+> ![Screenshot bagian x](screenshot_unguided1.jpg)
 
 ### Soal 2
 
@@ -360,7 +360,7 @@ int main() {
 Program C++ ini dirancang untuk mengkonversi bilangan bulat dari 0 hingga 100 menjadi representasi teks (terbilang) dalam Bahasa Indonesia. Program ini menggunakan fungsi khusus dan array konstan untuk melakukan konversi menyimpan terbilang untuk angka 0 hingga 19 (misalnya, "nol", "satu", ..., "sembilan belas"). Ini mencakup angka-angka yang memiliki penamaan unik, Menyimpan terbilang untuk kelipatan puluhan (misalnya, "dua puluh", "tiga puluh") yang indeksnya dimulai dari 0,1,2,... mewakili 0,10,20,.... lalu program meminta pengguna memasukkan sebuah bilangan dan menyimpannya di variabel, Menggunakan if (!(cin >> bilangan_masukan)) untuk memeriksa apakah input yang dimasukkan benar-benar bilangan bulat. Jika tidak valid (misalnya, memasukkan huruf), program mengeluarkan pesan kesalahan dan keluar. lalu Memanggil konversiAngkaKeTeks untuk mendapatkan representasi teks dari input. terakhir Mencetak angka yang dimasukkan dan hasil terbilangnya.
 
 > Output
-> ![Screenshot bagian x](screenshot_unguided2.png.jpg)
+> ![Screenshot bagian x](screenshot_unguided2.jpg)
 
 ### Soal 3
 
@@ -429,7 +429,7 @@ int main() {
 Tujuan utama program ini adalah menerima satu bilangan bulat positif (N) dari pengguna, lalu menggunakan nilai tersebut sebagai dimensi untuk menghasilkan pola visual unik di konsol yang terdiri dari angka dan karakter asterisk (*). Perulangan mencetak spasi di awal setiap baris. Ini menciptakan efek segitiga terbalik di mana baris atas memiliki spasi paling sedikit, dan indentasi meningkat seiring berkurangnya nilai baris. Perulangan mencetak angka dari nilai baris saat ini turun hingga 1 (…3 2 1). Spasi ditambahkan di antara angka kecuali setelah angka 1, Perulangan for (int kiri = baris; kiri >= 1; --kiri) mencetak angka dari nilai baris saat ini turun hingga 1 (…3 2 1). Spasi ditambahkan di antara angka kecuali setelah angka 1, Program mencetak pemisah " * " yang berfungsi sebagai sumbu simetri cermin di antara dua urutan angka, Perulangan for (int kanan = 1; kanan <= baris; ++kanan) mencetak angka dari 1 naik hingga nilai baris saat ini (1 2 3…).
 
 > Output
-> ![Screenshot bagian x](screenshot_unguided3.png.jpg)
+> ![Screenshot bagian x](screenshot_unguided3.jpg)
 
 penjelasan bedanya sesuai soal
 
